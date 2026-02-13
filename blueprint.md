@@ -7,7 +7,7 @@ This document outlines the plan and implementation of an AI-driven Sales Enablem
 
 ## Design and Branding
 
-*   **Reference Theme:** POSB (Singapore) website (posb.com.sg)
+*   **Reference Theme:** PPSB (Singapore) website (ppsb.com.sg)
 *   **Color Scheme:**
     *   Primary: Deep Blue (`#004684`)
     *   Secondary/Action: Bright Yellow (`#FFD200`)
@@ -29,7 +29,7 @@ This document outlines the plan and implementation of an AI-driven Sales Enablem
 
 ### UI Components
 
-*   **POSB-Style Header:** A header with a logo placeholder and a search bar for filtering customers.
+*   **PPSB-Style Header:** A header with a logo placeholder and a search bar for filtering customers.
 *   **Priority View:**
     *   Displays the top 3 priority customers in styled "Call Cards".
     *   Each card includes the company name, industry, and an "AI Insight" explaining the priority.
@@ -46,16 +46,16 @@ This document outlines the plan and implementation of an AI-driven Sales Enablem
 The following steps will be taken to build the application:
 
 1.  **Create Simulated Data:** Create a `data.js` file to store the simulated client data, transaction history, and market trends.
-2.  **Create a theme:** Create a `theme.js` file to define the POSB-inspired color scheme.
+2.  **Create a theme:** Create a `theme.js` file to define the PPSB-inspired color scheme.
 3.  **Component Creation:**
     *   `App.tsx`: The main application component, will handle routing.
-    *   `Header.tsx`: The POSB-style header with a search bar.
+    *   `Header.tsx`: The PPSB-style header with a search bar.
     *   `PriorityView.tsx`: The main view with the top 3 priority call cards.
     *   `CustomerDashboard.tsx`: The detailed customer view.
     *   `MarketResearchModal.tsx`: The modal for market research.
 4.  **Logic Implementation:**
     *   Implement the logic to determine the top 3 priority customers based on CRM data and market trends.
     *   Pass the correct data to each component.
-5.  **Styling:** Apply the custom theme and styling to all components to match the POSB reference.
+5.  **Styling:** Apply the custom theme and styling to all components to match the PPSB reference.
 6.  **Routing:** Implement routing using `react-router-dom` to navigate between the `PriorityView` and `CustomerDashboard`.
 7.  **Update `main.tsx`:** Wrap the `App` component with the `ThemeProvider` and `BrowserRouter`.
